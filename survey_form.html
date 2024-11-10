@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="survey_form.css" />
+</head>
+
+<body>
+  <h1 id="title">Survey Form</h1>
+  <p id="description">Please fill out this form to help us i mprove our better service</p>
+  <form id="survey-form" method="post" action='https://survey-demo.freecodecamp.org'>
+
+    <div>
+      <label id="name-label" for="name"> Name: <input id="name" name="name" type="text" placeholder="Enter your name"
+          required></label>
+    </div>
+
+    <div>
+      <label id="email-label" for="email"> Email: <input id="email" name="email" type="email"
+          placeholder="Enter your email" required></label>
+    </div>
+
+    <div>
+      <label id="number-label" for="age">Age (years): <input id="number" type="number" name="age" min="13" max="120"
+          placeholder="Enter your age" required></label>
+    </div>
+    <br>
+    <div>
+      <label for="dropdown">What is your current role?</label>
+
+      <select id="dropdown" required>
+        <option value="" disabled selected>Select your role</option>
+        <option value="student">Student</option>
+
+        <option value="full-time">Full-time Employee</option>
+        <option value="part-time">Part-time Employee</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+    <br>
+    <br>
+    <div>
+      <legend>How satisfied are you with our service?</legend>
+      <label>
+
+        <input type="radio" name="satisfaction" value="very satisfied"> Very satisfied
+      </label>
+      <label>
+        <input type="radio" name="satisfaction" value="satisfied"> Satisfied
+      </label>
+      <label>
+        <input type="radio" name="satisfaction" value="neutral"> Neutral
+      </label>
+      <label>
+        <input type="radio" name="satisfaction" value="not satisfied"> Not satisfied
+      </label>
+    </div>
+    <br>
+
+    <div>
+      <label>What features would you like to see?</label>
+      <input type="checkbox" name="features" value="more content"> More content
+      </label>
+      <label>
+        <input type="checkbox" name="features" value="better design"> Better design</label>
+      <label>
+        <input type="checkbox" name="features" value="better support"> Better support
+      </label>
+    </div>
+    <br>
+
+    <div>
+      <label for="comment">Any additional comments :</label>
+      <br>
+      <textarea id="comments" rows="4" cols="40" placeholder="Enter your comments here"></textarea>
+    </div>
+    <br>
+
+    <div>
+      <button id="submit" type="submit" value="Submit">Submit </button>
+  </form>
+</body>
+
+</html>
